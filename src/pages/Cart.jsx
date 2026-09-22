@@ -5,9 +5,6 @@ function Cart({ cart, setCart }) {
 
     const navigate = useNavigate();
 
-    /* =========================
-       INCREASE QUANTITY
-    ========================= */
 
     const increaseQuantity = (id) => {
 
@@ -43,9 +40,6 @@ function Cart({ cart, setCart }) {
     };
 
 
-    /* =========================
-       DECREASE QUANTITY
-    ========================= */
 
     const decreaseQuantity = (id) => {
 
@@ -78,9 +72,6 @@ function Cart({ cart, setCart }) {
     };
 
 
-    /* =========================
-       DELETE ITEM
-    ========================= */
 
     const removeItem = (id) => {
 
@@ -94,9 +85,6 @@ function Cart({ cart, setCart }) {
     };
 
 
-    /* =========================
-       TOTAL ITEMS
-    ========================= */
 
     const totalItems = cart.reduce(
         (total, item) =>
@@ -105,9 +93,6 @@ function Cart({ cart, setCart }) {
     );
 
 
-    /* =========================
-       SUBTOTAL
-    ========================= */
 
     const subtotal = cart.reduce(
         (total, item) =>
@@ -118,9 +103,6 @@ function Cart({ cart, setCart }) {
     );
 
 
-    /* =========================
-       EMPTY CART
-    ========================= */
 
     if (!cart || cart.length === 0) {
 
@@ -159,9 +141,6 @@ function Cart({ cart, setCart }) {
 
         <div className="amazon-cart-page">
 
-            {/* ==================================
-                LEFT SIDE
-            ================================== */}
 
             <div className="cart-left-section">
 
@@ -203,7 +182,6 @@ function Cart({ cart, setCart }) {
                                 key={item.id}
                             >
 
-                                {/* IMAGE */}
 
                                 <div className="amazon-cart-image">
 
@@ -215,7 +193,7 @@ function Cart({ cart, setCart }) {
                                 </div>
 
 
-                                {/* PRODUCT INFORMATION */}
+                             
 
                                 <div className="amazon-cart-details">
 
@@ -245,7 +223,7 @@ function Cart({ cart, setCart }) {
                                     </p>
 
 
-                                    {/* COLOR */}
+                                
 
                                     {item.selectedColor && (
 
@@ -259,7 +237,7 @@ function Cart({ cart, setCart }) {
                                     )}
 
 
-                                    {/* SIZE */}
+                              
 
                                     {item.selectedSize && (
 
@@ -273,7 +251,7 @@ function Cart({ cart, setCart }) {
                                     )}
 
 
-                                    {/* QUANTITY + ACTIONS */}
+                                  
 
                                     <div className="cart-actions">
 
@@ -361,7 +339,7 @@ function Cart({ cart, setCart }) {
                                 </div>
 
 
-                                {/* ITEM PRICE */}
+                               
 
                                 <div className="amazon-item-price">
 
