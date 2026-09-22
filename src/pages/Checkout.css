@@ -1,0 +1,399 @@
+.checkout-page {
+    background: #f7f7f7;
+    min-height: 100vh;
+    padding-bottom: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #111;
+}
+
+
+
+
+.checkout-header {
+    height: 65px;
+    background: #ffffff;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.checkout-header h1 {
+    font-size: 28px;
+    margin: 0;
+    color: #131921;
+}
+
+.checkout-header span {
+    color: #555;
+    font-size: 14px;
+}
+
+
+
+.checkout-steps {
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.checkout-step {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #777;
+}
+
+.checkout-step span {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 1px solid #aaa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkout-step.active {
+    color: #007185;
+    font-weight: 600;
+}
+
+.checkout-step.active span {
+    background: #007185;
+    color: white;
+    border-color: #007185;
+}
+
+.checkout-line {
+    width: 80px;
+    height: 1px;
+    background: #ccc;
+    margin: 0 15px;
+}
+
+
+
+
+.checkout-container {
+    max-width: 1200px;
+    margin: 25px auto;
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    gap: 25px;
+    padding: 0 20px;
+}
+
+
+
+
+.checkout-left {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.checkout-section {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 25px;
+    display: flex;
+    gap: 18px;
+}
+
+.section-number {
+    background: #eaeded;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.section-content {
+    flex: 1;
+}
+
+.section-content h2 {
+    font-size: 20px;
+    margin: 0 0 18px;
+}
+
+
+
+.address-card {
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    padding: 15px;
+    width: 320px;
+    position: relative;
+}
+
+.address-card strong {
+    font-size: 15px;
+}
+
+.address-card p {
+    margin: 4px 0;
+    font-size: 13px;
+    color: #555;
+}
+
+.address-card button {
+    margin-top: 10px;
+    border: 1px solid #aaa;
+    background: white;
+    padding: 7px 15px;
+    cursor: pointer;
+}
+
+
+
+
+.payment-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.payment-option {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    display: flex;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.payment-option.selected {
+    border: 2px solid #007185;
+    background: #f5ffff;
+}
+
+.payment-option input {
+    margin-top: 4px;
+}
+
+.payment-option strong {
+    font-size: 14px;
+}
+
+.payment-option p {
+    margin: 5px 0 0;
+    color: #666;
+    font-size: 12px;
+}
+
+
+
+.payment-form {
+    margin-top: 15px;
+    padding: 15px;
+    background: #f7f7f7;
+    border: 1px solid #ddd;
+}
+
+.payment-form h3 {
+    font-size: 14px;
+    margin-top: 0;
+}
+
+.payment-form input {
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+
+.card-row {
+    display: flex;
+    gap: 10px;
+}
+
+.card-row input {
+    flex: 1;
+}
+
+
+
+
+.checkout-product {
+    display: flex;
+    gap: 15px;
+    border-top: 1px solid #eee;
+    padding: 15px 0;
+}
+
+.checkout-product img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+}
+
+.checkout-product strong {
+    font-size: 14px;
+}
+
+.checkout-product p {
+    margin: 5px 0;
+    font-size: 13px;
+    color: #555;
+}
+
+
+
+
+.checkout-summary {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 22px;
+    height: fit-content;
+    position: sticky;
+    top: 20px;
+}
+
+.checkout-summary h2 {
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.summary-line {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+    font-size: 14px;
+}
+
+.free {
+    color: #007600;
+}
+
+.checkout-summary hr {
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+.final-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.final-total span {
+    font-size: 18px;
+}
+
+.final-total strong {
+    font-size: 22px;
+    color: #b12704;
+}
+
+
+
+
+.place-order-button {
+    width: 100%;
+    height: 45px;
+    border: 1px solid #fcd200;
+    border-radius: 22px;
+    background: #ffd814;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.place-order-button:hover {
+    background: #f7ca00;
+}
+
+.secure-text {
+    text-align: center;
+    color: #007185;
+    font-size: 12px;
+}
+
+
+
+
+.order-success {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f7f7f7;
+}
+
+.success-box {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 50px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.success-icon {
+    width: 60px;
+    height: 60px;
+    background: #067d62;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    margin: auto;
+}
+
+.success-box h1 {
+    font-size: 26px;
+}
+
+.success-box p {
+    color: #555;
+}
+
+.success-box button {
+    background: #ffd814;
+    border: 1px solid #fcd200;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+@media (max-width: 800px) {
+
+    .checkout-container {
+        grid-template-columns: 1fr;
+    }
+
+    .checkout-summary {
+        position: static;
+    }
+
+    .checkout-header {
+        padding: 0 20px;
+    }
+
+    .checkout-steps {
+        overflow-x: auto;
+        justify-content: flex-start;
+    }
+
+}

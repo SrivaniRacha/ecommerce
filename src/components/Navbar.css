@@ -1,0 +1,221 @@
+
+.navbar {
+    width: 100%;
+    min-height: 65px;
+
+    background-color: #131921;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 20px;
+
+    box-sizing: border-box;
+
+    color: white;
+
+    gap: 20px;
+}
+
+
+
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+
+    white-space: nowrap;
+
+    cursor: pointer;
+
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+.location {
+    display: flex;
+    flex-direction: column;
+
+    cursor: pointer;
+
+    white-space: nowrap;
+}
+
+.small-text {
+    font-size: 12px;
+    color: #dddddd;
+}
+
+.location-text {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+
+
+.search-box {
+    height: 40px;
+
+    display: flex;
+
+    flex: 1;
+
+    max-width: 750px;
+}
+
+.search-box input {
+    width: 100%;
+
+    border: none;
+
+    padding: 0 15px;
+
+    font-size: 16px;
+
+    outline: none;
+
+    border-radius: 4px 0 0 4px;
+}
+
+.search-box button {
+    width: 50px;
+
+    border: none;
+
+    background-color: #febd69;
+
+    font-size: 20px;
+
+    cursor: pointer;
+
+    border-radius: 0 4px 4px 0;
+}
+
+.search-box button:hover {
+    background-color: #f3a847;
+}
+
+
+
+
+.nav-item {
+    display: flex;
+
+    flex-direction: column;
+
+    white-space: nowrap;
+
+    cursor: pointer;
+}
+
+.nav-item span:last-child {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+
+.cart {
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    white-space: nowrap;
+
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+.sub-navbar {
+    width: 100%;
+
+    min-height: 45px;
+
+    background-color: #232f3e;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 28px;
+
+    padding: 0 20px;
+
+    box-sizing: border-box;
+
+    font-size: 14px;
+
+    font-weight: 500;
+
+    overflow-x: auto;
+}
+
+.sub-navbar a {
+    color: white;
+
+    text-decoration: none;
+
+    white-space: nowrap;
+
+    cursor: pointer;
+
+    padding: 7px;
+}
+
+.sub-navbar a:hover {
+    border: 1px solid white;
+}
+
+
+
+@media (max-width: 900px) {
+
+    .navbar {
+        gap: 10px;
+        padding: 0 10px;
+    }
+
+    .location {
+        display: none;
+    }
+
+    .nav-item {
+        display: none;
+    }
+}
+
+
+
+
+@media (max-width: 600px) {
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .cart {
+        font-size: 15px;
+    }
+
+    .search-box {
+        max-width: none;
+    }
+}
+
